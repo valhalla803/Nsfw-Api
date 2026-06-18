@@ -20,7 +20,7 @@ A lightweight Node.js API built with Express, TensorFlow, and NSFWJS to detect a
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/valhalla803/Nsfw-Api.git](https://github.com/valhalla803/Nsfw-Api.git)
+   git clone https://github.com/valhalla803/Nsfw-Api.git
    cd Nsfw-Api
 
 ```
@@ -37,6 +37,7 @@ npm install
 node index.js
 
 ```
+
 
 
 The server will initialize the model and listen on port 3000.
@@ -60,7 +61,7 @@ The server will initialize the model and listen on port 3000.
 ```bash
 curl -X POST http://localhost:3000/api/check \
 -H "Content-Type: application/json" \
--d '{"url": "[https://example.com/photo.jpg](https://example.com/photo.jpg)", "threshold": 0.6}'
+-d '{"url": "https://example.com/photo.jpg", "threshold": 0.6}'
 
 ```
 
@@ -73,7 +74,7 @@ A successful request returns a structured JSON object containing the evaluation 
 ```json
 {
   "success": true,
-  "url": "[https://example.com/photo.jpg](https://example.com/photo.jpg)",
+  "url": "https://example.com/photo.jpg",
   "adult_score": 0.9868626780807972,
   "is_adult_content": true,
   "results": [
